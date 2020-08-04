@@ -1,0 +1,22 @@
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+body{
+  font-family:adobe arabic;
+  font-size:22px;
+  direction:rtl;
+  color: black;
+  background-color: rgb(219, 219, 219);
+}

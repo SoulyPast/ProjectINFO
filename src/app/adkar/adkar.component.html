@@ -1,0 +1,28 @@
+<div class="row mt-5 ml-5 mr-5 mb-5">
+  <div class="col-sm-8 mt-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center general" id ="general">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mt-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">:الفهرس</h4>
+        <div class="md-form active-pink active-pink-2 mt-4 mr-3 ml-3 mb-4">
+          <input type="text" class="form-control text-right" placeholder=" ... البحث" aria-label="Search" id="myInput" (keyup)="SearchBar()">
+        </div>
+        <ul class="list-group" id="myUL" >
+          <div *ngFor="let infoadkar of infoadkars">
+          <li class="list-group-item mb-1">
+            <a>
+            <button type="button" class="btn btn-info btn-lg btn-block" id="{{infoadkar.ID}}" (click)="FunctionAdkar($event)">{{ infoadkar.TITLE }}</button>
+            </a>
+          </li>
+         </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

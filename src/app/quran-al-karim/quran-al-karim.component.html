@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col align-self-center">
+      <select dir="rtl" class="custom-select custom-select-lg mb-3 mt-3" >
+        <option selected>اختر الرواية</option>
+        <option value="{{r}}" *ngFor="let r of rewaya">{{r}}</option>
+      </select>
+      <input dir="rtl" class="form-control" type="text" placeholder="البحث عن القارئ" aria-label="Search">
+      <div class="row  justify-content-md-center mt-5">
+        <div class="col-sm-10">
+          <div class="card">
+            <div class="card-body text-center" id="text">
+              <ul class="list-group flex-md-row nav" id="myUL" >
+                <div *ngFor="let i of info;;let indice=index">
+                <li class="mb-1" style="width:200px">
+                  <a>
+                  <button type="button" class="btn btn-info btn btn-block" (click)="Functionsorat($event, i.Server, i.name , i.rewaya)" id="{{ i.id }}">{{ i.name }}</button>
+                  </a>
+                </li>
+               </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
